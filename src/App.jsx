@@ -42,7 +42,8 @@ const [show, setShow] = useState(true)
         <input className="border p-2 rounded w-full max-w-md mx-auto block mb-4" type="text" placeholder= "Buscar producto" value = {search} onChange= {(e)=> {setSearch(e.target.value)}} />
 
         <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition mb-4 mx-auto block"onClick= {()=>setShow(!show)}>{show ?"Ocultar" : "Mostrar"} </button>
-
+        
+        {/*operador ternario para mostrar u ocultar el panel de estadísticas*/}
         {show && (
         <StatsPanel total={totalProducts} max={maxProduct} min={minProduct} longTitles={longTitlesCount} totalPrice={totalPrice}  avgDiscount={avgDiscount.toFixed(2)} />)}
         <div className="transition-opacity duration-500 ease-in-out">
