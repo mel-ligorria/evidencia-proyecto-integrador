@@ -51,3 +51,8 @@ Este proyecto fue creado con **Vite + React**, utiliza **Tailwind CSS** para los
 - Renderizado condicional basado en búsqueda.
 - Estilos básicos y animaciones suaves.
 
+---
+
+### Proyecto Integrador
+
+Desarrollado por **Mel Ligorria**
