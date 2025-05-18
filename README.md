@@ -29,3 +29,25 @@ Este proyecto fue creado con **Vite + React**, utiliza **Tailwind CSS** para los
 ## Captura de pantalla
 
 ![Vista del proyecto](./screenshot.png.png)
+
+# Aplicación React con Axios, Filtros y Estadísticas
+
+## Estadísticas Agregadas
+
+- Producto más caro (nombre y precio).
+- Producto más barato (nombre y precio).
+- Cantidad de productos cuyo título tiene más de 20 caracteres.
+- Precio total de productos filtrados.
+- Promedio de descuento (`discountPercentage`).
+
+## Componentes
+
+- **ProductList**: Renderiza la lista de productos en forma de tarjetas.
+- **StatsPanel**: Muestra todas las estadísticas calculadas dinámicamente.
+
+## Funcionalidades
+
+- Filtrado dinámico por título.
+- Renderizado condicional basado en búsqueda.
+- Estilos básicos y animaciones suaves.
+
