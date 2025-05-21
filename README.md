@@ -15,7 +15,8 @@ Este proyecto fue creado con **Vite + React**, utiliza **Tailwind CSS** para los
 1. Cloná o descargá este repositorio o carpeta.
 2. Abrí la terminal en la carpeta del proyecto.
 3. Ejecutá este comando para instalar las dependencias con npm i
-4. Luego, iniciá la app con:
+4. Iniciar la app con npm run dev
+5. Luego, iniciá la app con:
 
 - Abrí el navegador y entrá en:  
 [http://localhost:5173](http://localhost:5173)
@@ -55,4 +56,4 @@ Este proyecto fue creado con **Vite + React**, utiliza **Tailwind CSS** para los
 
 ### Proyecto Integrador
 
-Desarrollado por **Mel Ligorria**
+Desarrollado por **Melania Ligorria**
