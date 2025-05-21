@@ -18,14 +18,19 @@ const [show, setShow] = useState(true)
      []);
 
   //Filtrar productos de la API
-  const filteredproducts = products.filter((p) => 
+  const filteredproducts = products.filter((p) =>
     p.title.toLowerCase().includes(search.toLowerCase())
   );
+
   const totalProducts = filteredproducts.length;  //Total de productos
-  const maxProduct = Math.max(...filteredproducts.map(p => p.price), 0);  //Precio máximo
-  const minProduct = Math.min(...filteredproducts.map(p => p.price), 0); //Precio mínimo
+  const maxProduct = filteredproducts.reduce((prev, current) => {
+    return (prev.price > current.price) ? prev : current;
+  }, 0); //Precio máximo
+  const minProduct = filteredproducts.reduce((prev, current) => {
+    return (prev.price < current.price) ? prev : current;
+  }, 0); //Precio mínimo
   const longTitlesCount = filteredproducts.filter(p => p.title.length > 20).length; // Contar títulos largos
-  const totalPrice = filteredproducts.reduce((sum, p) => sum + p.price, 0); // Sumar precios
+  const totalPrice = filteredproducts.reduce((sum, p) => sum + p.price, 0).toFixed(2); // Sumar precios
   const avgDiscount = filteredproducts.length > 0
   ? filteredproducts.reduce((sum, p) => sum + p.discountPercentage, 0) / filteredproducts.length
   : 0; // Promedio de descuento
